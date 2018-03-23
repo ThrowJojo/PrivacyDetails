@@ -1,31 +1,35 @@
 <html>
 
+<script>
+    function getParam(param) {
+        return new URLSearchParams(window.location.search).get(param);
+    }
+
+    window.onload = function () {
+        var name = getParam("name");
+        document.getElementById('nameTitle').innerHTML = name + " Privacy Policy";
+    }
+</script>
+
 <body>
-    <div>
-        <h1>BlackOut Privacy Policy</h1>
+    <div style="padding: 20px">
+        <h1 id="nameTitle">Privacy Policy</h1>
         <p>
             This privacy policy has been compiled to better serve and inform those who are concerned about how their ‘Personally Identifiable
-            Information’ (PII) is being used in BlackOut. Please read this privacy policy carefully to have a clear understanding
-            of how we collect, use, protect or otherwise handle your Personally Identifiable Information in accordance with
-            our mobile application(app).
+            Information’ (PII) is being used in conjunction with this app. Please read this privacy policy carefully to have
+            a clear understanding of how we collect, use, protect or otherwise handle your Personally Identifiable Information
+            in accordance with our mobile application(app).
         </p>
         <h2>
             What personal information do we collect from the users of our app?
         </h2>
         <p>
-            When using our app in locked mode, the state of your phone is monitored(Ringing, Talking or Idle). This monitoring is used
-            to determine when to temporarily lift the lock mode so an incoming call can be taken. We do not record any information
-            about your calls.
+            We don't collect any personal data in this app, any data incidentally collected or analyzed is anonymized.
         </p>
-        <h2>When do we collect information?</h2>
+        <h2>When do we collect personal information?</h2>
         <p>
-            As explained above no personally identifiable information is collected, we just use an Android Permission to monitor the
-            call state of your phone(for example but not limited to: Ringing, Talking or Idle).
-        </p>
-        <h2>How do we use your information?</h2>
-        <p>
-            As explained above the call state of your phone is only used to decide if the lock mode in the app should be temporarily
-            disabled.
+            As explained above no personally identifiable information is collected by this app, anonymized data may be incidentally collected
+            as outlined below.
         </p>
         <h2>Crash Reporting/Log Data</h2>
         <p>
@@ -37,15 +41,15 @@
         <h2>Third Party Disclosure</h2>
         <p>
             We do not sell, trade or otherwise transfer to outside parties your Personally Identifiable Information. However, non-personally
-            identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+            identifiable visitor information may be encrypted and provided to other parties/services for analysis or bug/crash
+            reporting.
         </p>
-        <h2>Information Disclosure</h2>
+        <h2>Contact Us</h2>
         <p>
-            This app may collect app usage information. Individuals are not identified in the collected information. The collected information
-            is stored, compiled, and analysed in a form that does not identify individuals, and it is used to improve app
-            functionality, to develop services, to provide consulting services and statistical reports (including publishing
-            of public report) and database services to third parties.
+            This privacy policy may change at any point without notice. If you have any questions regarding this privacy policy you may
+            contact us using the information below:
         </p>
+        <a href="mailto:detox.app.now@gmail.com">detox.app.now@gmail.com</a>
 </body>
 
 </html>
