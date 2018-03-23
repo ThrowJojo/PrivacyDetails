@@ -7,7 +7,9 @@
 
     window.onload = function () {
         var name = getParam("name");
-        document.getElementById('nameTitle').innerHTML = name + " Privacy Policy";
+        if (name != null) {
+            document.getElementById('nameTitle').innerHTML = name + " Privacy Policy";
+        }
     }
 </script>
 
